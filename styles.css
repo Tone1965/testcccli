@@ -312,17 +312,60 @@ button {
 }
 
 /* ==========================================
-   Hero Section
+   Hero Section - Enhanced Professional Design
    ========================================== */
 
 .hero {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    /* ===== CURRENT GRADIENT ===== */
+    /* Modern Professional Gradient Background - Blues and Grays for Trust */
+    background: linear-gradient(135deg,
+        #1e3a8a 0%,      /* Deep professional blue */
+        #2563eb 35%,     /* Vibrant blue */
+        #475569 100%     /* Professional slate gray */
+    );
+
+    /* ===== ALTERNATIVE GRADIENT OPTIONS ===== */
+    /* Option 1: Navy to Teal Professional
+    background: linear-gradient(135deg, #0f172a 0%, #164e63 50%, #155e75 100%);
+    */
+
+    /* Option 2: Deep Blue to Purple Professional
+    background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #581c87 100%);
+    */
+
+    /* Option 3: Slate Gray Professional (More Neutral)
+    background: linear-gradient(135deg, #334155 0%, #475569 50%, #64748b 100%);
+    */
+
+    /* Option 4: Blue to Emerald Trust Colors
+    background: linear-gradient(135deg, #1e40af 0%, #0d9488 100%);
+    */
+
+    /* ===== TO ADD BACKGROUND IMAGE ===== */
+    /* Uncomment and add your image URL below
+    background-image:
+        linear-gradient(135deg, rgba(30, 58, 138, 0.92) 0%, rgba(71, 85, 105, 0.88) 100%),
+        url('YOUR-IMAGE-URL-HERE.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    For multiple images or fallback:
+    background-image:
+        linear-gradient(135deg, rgba(30, 58, 138, 0.92) 0%, rgba(71, 85, 105, 0.88) 100%),
+        url('hero-image.jpg'),
+        url('fallback-image.jpg');
+    */
+
     color: var(--text-white);
     padding: 3rem 0;
     position: relative;
     overflow: hidden;
+    min-height: 500px;
 }
 
+/* Professional Dot Pattern Overlay for Texture */
 .hero::before {
     content: '';
     position: absolute;
@@ -330,8 +373,29 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></svg>') repeat;
-    opacity: 0.1;
+    background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Dark Overlay for Enhanced Text Readability */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
 }
 
 /* Hero Two-Column Layout */
@@ -360,6 +424,10 @@ button {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-white);
+    /* Enhanced text shadow for readability on any background */
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.5),
+        0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {
@@ -367,6 +435,10 @@ button {
     line-height: 1.6;
     margin-bottom: 2rem;
     opacity: 0.95;
+    /* Text shadow for better contrast */
+    text-shadow:
+        1px 1px 3px rgba(0, 0, 0, 0.5),
+        0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-features {
@@ -380,21 +452,32 @@ button {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
     padding: 1rem;
     border-radius: var(--radius-md);
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .feature-icon {
     width: 1.5rem;
     height: 1.5rem;
     flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .feature-item span {
     font-weight: 600;
     font-size: 0.9375rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero-cta {
@@ -469,6 +552,125 @@ button {
     margin-top: 1rem;
     margin-bottom: 0;
     font-weight: 500;
+}
+
+/* ==========================================
+   Hero Emergency Badge - Prominent Visual Element
+   ========================================== */
+
+.hero-emergency-badge {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #ef4444 100%);
+    color: var(--text-white);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 16px rgba(220, 38, 38, 0.4);
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    z-index: 10;
+    animation: pulse-glow 2s ease-in-out infinite;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero-emergency-badge::before {
+    content: '🚨';
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Pulse animation for emergency badge */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 8px 16px rgba(220, 38, 38, 0.4),
+                    0 0 0 0 rgba(220, 38, 38, 0.7);
+    }
+    50% {
+        box-shadow: 0 8px 24px rgba(220, 38, 38, 0.6),
+                    0 0 0 8px rgba(220, 38, 38, 0);
+    }
+}
+
+/* ==========================================
+   Hero Call Now Badge - Sticky Prominent CTA
+   ========================================== */
+
+.hero-call-now-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: var(--text-white);
+    padding: 1.25rem 2rem;
+    border-radius: var(--radius-xl);
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+    transition: all 0.3s ease;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+    animation: phone-ring 1.5s ease-in-out infinite;
+}
+
+.hero-call-now-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(34, 197, 94, 0.6);
+}
+
+.hero-call-now-badge::before {
+    content: '📞';
+    font-size: 1.75rem;
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+/* Phone ring animation */
+@keyframes phone-ring {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-3deg);
+    }
+    20%, 40% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Shake animation for phone icon */
+@keyframes shake {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+}
+
+/* Mobile: Position emergency badge differently */
+@media (max-width: 640px) {
+    .hero-emergency-badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        font-size: 0.75rem;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .hero-call-now-badge {
+        font-size: 1.25rem;
+        padding: 1rem 1.5rem;
+    }
 }
 
 /* ==========================================
