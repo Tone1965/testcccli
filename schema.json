@@ -1,0 +1,546 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HVACBusiness",
+      "@id": "https://www.birminghamhvacemergency.com/#organization",
+      "name": "Birmingham Emergency HVAC Repair",
+      "alternateName": "24/7 Birmingham HVAC Services",
+      "description": "Emergency HVAC repair services in Birmingham, Alabama. Available 24/7 for AC and heating emergencies. Fast, reliable service throughout the Birmingham metro area.",
+      "url": "https://www.birminghamhvacemergency.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.birminghamhvacemergency.com/logo.png",
+        "width": 600,
+        "height": 200
+      },
+      "image": "https://www.birminghamhvacemergency.com/birmingham-hvac-service.jpg",
+      "telephone": "+1-205-555-0100",
+      "email": "emergency@birminghamhvac.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1500 1st Avenue North",
+        "addressLocality": "Birmingham",
+        "addressRegion": "AL",
+        "postalCode": "35203",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "33.5186",
+        "longitude": "-86.8104"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Birmingham",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alabama"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Hoover",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alabama"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Vestavia Hills",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alabama"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Mountain Brook",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alabama"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Homewood",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alabama"
+          }
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Check, Financing Available",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "247",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah Johnson"
+          },
+          "datePublished": "2024-07-15",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "AC went out during a heat wave. They arrived within 2 hours and had it fixed the same day. Professional and reasonably priced!"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael Davis"
+          },
+          "datePublished": "2024-01-22",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Heating system failed in the middle of January. Called late at night and they sent someone right away. Excellent emergency service!"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer Martinez"
+          },
+          "datePublished": "2024-09-03",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Fast response time and fair pricing. Technician was knowledgeable and explained everything clearly. Highly recommend for emergency HVAC needs."
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Emergency HVAC Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency AC Repair",
+              "serviceType": "Air Conditioning Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Heating Repair",
+              "serviceType": "Heating System Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "24/7 HVAC Service",
+              "serviceType": "HVAC Maintenance"
+            }
+          }
+        ]
+      },
+      "slogan": "Birmingham's Trusted 24/7 Emergency HVAC Experts",
+      "founder": {
+        "@type": "Person",
+        "name": "Robert Williams"
+      },
+      "foundingDate": "2005",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 35
+      },
+      "knowsAbout": [
+        "Emergency HVAC Repair",
+        "Air Conditioning Systems",
+        "Heating Systems",
+        "HVAC Installation",
+        "HVAC Maintenance",
+        "Indoor Air Quality"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/birminghamhvacemergency",
+        "https://www.instagram.com/birminghamhvac",
+        "https://twitter.com/birminghamhvac",
+        "https://www.linkedin.com/company/birmingham-hvac-emergency"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.birminghamhvacemergency.com/#emergency-ac-repair",
+      "name": "Emergency AC Repair Birmingham AL",
+      "description": "Fast emergency air conditioning repair service in Birmingham, Alabama. Available 24/7 for all AC breakdowns, refrigerant leaks, compressor failures, and cooling emergencies.",
+      "provider": {
+        "@id": "https://www.birminghamhvacemergency.com/#organization"
+      },
+      "serviceType": "Emergency Air Conditioning Repair",
+      "areaServed": {
+        "@type": "City",
+        "name": "Birmingham",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Alabama"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AC Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AC Compressor Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Refrigerant Leak Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AC Fan Motor Replacement"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Thermostat Repair"
+            }
+          }
+        ]
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://www.birminghamhvacemergency.com/emergency-ac-repair",
+        "servicePhone": {
+          "@type": "ContactPoint",
+          "telephone": "+1-205-555-0100",
+          "contactType": "Emergency Service"
+        },
+        "availableLanguage": ["English", "Spanish"]
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceRange": "$$",
+        "availabilityStarts": "00:00",
+        "availabilityEnds": "23:59"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.birminghamhvacemergency.com/#emergency-heating-repair",
+      "name": "Emergency Heating Repair Birmingham AL",
+      "description": "24/7 emergency heating repair service in Birmingham, Alabama. Fast response for furnace failures, heat pump issues, pilot light problems, and all heating emergencies during cold weather.",
+      "provider": {
+        "@id": "https://www.birminghamhvacemergency.com/#organization"
+      },
+      "serviceType": "Emergency Heating System Repair",
+      "areaServed": {
+        "@type": "City",
+        "name": "Birmingham",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Alabama"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Heating Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Furnace Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heat Pump Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pilot Light Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ignition System Repair"
+            }
+          }
+        ]
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://www.birminghamhvacemergency.com/emergency-heating-repair",
+        "servicePhone": {
+          "@type": "ContactPoint",
+          "telephone": "+1-205-555-0100",
+          "contactType": "Emergency Service"
+        },
+        "availableLanguage": ["English", "Spanish"]
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceRange": "$$",
+        "availabilityStarts": "00:00",
+        "availabilityEnds": "23:59"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.birminghamhvacemergency.com/#24-7-hvac-service",
+      "name": "24/7 HVAC Service Birmingham",
+      "description": "Round-the-clock HVAC service in Birmingham, Alabama. Emergency repairs, maintenance, and installations available any time, day or night. No extra weekend or holiday fees for emergencies.",
+      "provider": {
+        "@id": "https://www.birminghamhvacemergency.com/#organization"
+      },
+      "serviceType": "24/7 HVAC Services",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Birmingham",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alabama"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Hoover",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alabama"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Vestavia Hills",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alabama"
+          }
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "24/7 HVAC Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency HVAC Diagnostics"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "After-Hours HVAC Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Weekend HVAC Service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Holiday HVAC Emergency Service"
+            }
+          }
+        ]
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://www.birminghamhvacemergency.com/24-7-service",
+        "servicePhone": {
+          "@type": "ContactPoint",
+          "telephone": "+1-205-555-0100",
+          "contactType": "Emergency Service",
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        },
+        "availableLanguage": ["English", "Spanish"]
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceRange": "$$"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.birminghamhvacemergency.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What should I do when my AC breaks during Birmingham summer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your AC breaks during Birmingham's hot summer, first check your thermostat settings and circuit breaker. If those are fine, call Birmingham Emergency HVAC Repair immediately at 205-555-0100. We offer 24/7 emergency service and can typically arrive within 1-2 hours. While waiting, close blinds, use fans, stay hydrated, and avoid using heat-generating appliances. Our certified technicians carry common parts and can often complete repairs the same day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can you fix emergency heating in Birmingham?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide rapid emergency heating repair throughout Birmingham, AL, typically arriving within 1-2 hours of your call. Our technicians stock common parts for furnaces, heat pumps, and heating systems, allowing us to complete most repairs on the first visit. Simple issues like thermostat problems or pilot light relighting can be fixed in under an hour, while more complex repairs like heat exchanger or ignition system issues may take 2-4 hours. We work efficiently to restore your heat as quickly as possible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer 24/7 HVAC repair in Birmingham AL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Birmingham Emergency HVAC Repair provides true 24/7 emergency service, 365 days a year. We're available nights, weekends, and holidays with no extra fees for after-hours emergencies. Our phones are answered by real people, not answering services, and we dispatch certified HVAC technicians immediately. Whether it's 2 AM on a Sunday or Christmas Day, we're ready to help with your heating or cooling emergency anywhere in the Birmingham metro area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does emergency HVAC repair cost in Birmingham?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Emergency HVAC repair costs in Birmingham vary based on the issue. Our service call fee is $89, which includes diagnostics. Simple repairs like thermostat replacement or capacitor issues typically range from $150-$350. More complex repairs like compressor replacement or refrigerant leak repairs can cost $500-$1,500. We provide upfront pricing before starting work and never charge extra for nights, weekends, or holidays on emergency calls. We also offer financing options for larger repairs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas around Birmingham do you service for emergency HVAC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide emergency HVAC service throughout Birmingham and surrounding areas including Hoover, Vestavia Hills, Mountain Brook, Homewood, Trussville, Pelham, Alabaster, Gardendale, Fultondale, and all of Jefferson, Shelby, and St. Clair counties. Our strategically located technicians can reach most Birmingham metro locations within 1-2 hours. Call us at 205-555-0100 to confirm we service your specific location for emergency HVAC repairs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are signs I need emergency AC repair in Birmingham?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Call for emergency AC repair in Birmingham if you experience: complete loss of cooling, warm air blowing from vents, unusual loud noises (grinding, squealing, or banging), burning smells, water leaks around the unit, frozen coils or refrigerant lines, frequent cycling on and off, or electrical issues like tripped breakers. During Birmingham's hot summers with temperatures reaching 90-100°F, a non-functioning AC is a genuine emergency. Don't wait - call Birmingham Emergency HVAC at 205-555-0100 for immediate assistance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you repair all HVAC brands in Birmingham AL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our certified HVAC technicians in Birmingham are trained and equipped to repair all major HVAC brands including Carrier, Trane, Lennox, Rheem, Goodman, York, American Standard, Bryant, Amana, Daikin, Mitsubishi, and more. We service both residential and light commercial systems including central air, heat pumps, ductless mini-splits, and furnaces. Our service vehicles stock parts for the most common brands, and we can source specialized parts quickly when needed for emergency repairs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose Birmingham Emergency HVAC for after-hours service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Birmingham Emergency HVAC stands out for after-hours service because we offer: true 24/7 availability with real people answering phones, certified and experienced technicians, 1-2 hour average response times, fully-stocked service vehicles for same-visit repairs, no extra fees for nights/weekends/holidays on emergencies, upfront pricing before work begins, 4.8-star rating with 247 reviews, financing options available, and over 18 years serving Birmingham. We're locally owned and understand Birmingham's unique climate challenges requiring reliable HVAC service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I prevent HVAC emergencies in Birmingham's climate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prevent HVAC emergencies in Birmingham by: scheduling biannual maintenance (spring for AC, fall for heating), changing air filters every 1-3 months, keeping outdoor units clear of debris and vegetation, checking thermostat batteries, ensuring proper insulation and ventilation, cleaning condensate drains, listening for unusual noises, and addressing small issues before they become emergencies. Birmingham's hot, humid summers and occasional cold winters stress HVAC systems. Regular maintenance by Birmingham Emergency HVAC can reduce emergency breakdowns by up to 80% and extend your system's lifespan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment options do you accept for emergency repairs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Birmingham Emergency HVAC accepts multiple payment options for your convenience: all major credit cards (Visa, MasterCard, American Express, Discover), debit cards, cash, personal checks, and business checks. We also offer financing through approved partners with flexible payment plans, including 0% interest options for qualified customers. Payment is due upon completion of service. We can also work directly with home warranty companies if you have coverage. Call us at 205-555-0100 to discuss payment options for your emergency HVAC repair."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.birminghamhvacemergency.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.birminghamhvacemergency.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Emergency Services",
+          "item": "https://www.birminghamhvacemergency.com/emergency-services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Birmingham AL",
+          "item": "https://www.birminghamhvacemergency.com/birmingham-al"
+        }
+      ]
+    }
+  ]
+}

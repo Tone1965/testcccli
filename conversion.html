@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency HVAC Services Birmingham - 24/7 Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Sticky Header */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-text {
+            font-size: 14px;
+            font-weight: 600;
+            margin-right: 20px;
+        }
+
+        .header-phone {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-phone-number {
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .header-phone-number:hover {
+            color: #fbbf24;
+        }
+
+        .emergency-badge {
+            background: #ef4444;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Main Content Area */
+        .content-wrapper {
+            margin-top: 80px;
+            padding: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* CTA Buttons */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.6);
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        }
+
+        .cta-button-large {
+            font-size: 22px;
+            padding: 22px 50px;
+        }
+
+        .cta-button-secondary {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        }
+
+        .cta-button-secondary:hover {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+        }
+
+        .cta-section {
+            background: white;
+            padding: 40px 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .cta-section h2 {
+            color: #1e3a8a;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 25px;
+        }
+
+        /* Click-to-Call Mobile Buttons */
+        .click-to-call {
+            display: inline-block;
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+        }
+
+        @media (min-width: 768px) {
+            .mobile-only {
+                display: none;
+            }
+        }
+
+        /* Emergency Contact Form */
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-header h2 {
+            color: #1e3a8a;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .form-header .emergency-text {
+            color: #ef4444;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #374151;
+            font-size: 15px;
+        }
+
+        .required {
+            color: #ef4444;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            background: #fef2f2;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #fecaca;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            margin: 0;
+            color: #991b1b;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-submit {
+            margin-top: 30px;
+        }
+
+        .form-submit button {
+            width: 100%;
+        }
+
+        .zip-verify-text {
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 5px;
+        }
+
+        /* Trust Badges Section */
+        .trust-badges {
+            background: white;
+            padding: 50px 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .trust-badges h2 {
+            text-align: center;
+            color: #1e3a8a;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .badge-item {
+            text-align: center;
+            padding: 25px;
+            border-radius: 10px;
+            background: #f8fafc;
+            transition: transform 0.3s ease;
+        }
+
+        .badge-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .badge-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .badge-item h3 {
+            color: #1e3a8a;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .badge-item p {
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Social Proof Section */
+        .social-proof {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            padding: 60px 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+        }
+
+        .social-proof h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .social-proof .subtitle {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 50px;
+            opacity: 0.9;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: white;
+            color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-rating {
+            color: #fbbf24;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #4b5563;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .author-info h4 {
+            color: #1e3a8a;
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+
+        .author-info p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        /* Stats Section */
+        .stats-bar {
+            background: #fef3c7;
+            padding: 30px 20px;
+            margin: 30px 0;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #6b7280;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Urgency Banner */
+        .urgency-banner {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sticky-header {
+                padding: 12px 15px;
+            }
+
+            .header-text {
+                font-size: 12px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .header-phone {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .header-phone-number {
+                font-size: 20px;
+            }
+
+            .content-wrapper {
+                margin-top: 100px;
+                padding: 15px;
+            }
+
+            .cta-section h2 {
+                font-size: 24px;
+            }
+
+            .cta-section p {
+                font-size: 16px;
+            }
+
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+
+            .cta-button-large {
+                font-size: 18px;
+                padding: 18px 35px;
+            }
+
+            .form-container {
+                padding: 25px 20px;
+            }
+
+            .form-header h2 {
+                font-size: 24px;
+            }
+
+            .trust-badges h2,
+            .social-proof h2 {
+                font-size: 24px;
+            }
+
+            .badges-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-number {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cta-button {
+                padding: 14px 25px;
+                font-size: 15px;
+            }
+
+            .stats-bar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Header with Phone Number -->
+    <header class="sticky-header">
+        <div class="header-text">
+            <span class="emergency-badge">24/7 Emergency</span>
+            Birmingham's Trusted HVAC Experts
+        </div>
+        <div class="header-phone">
+            <a href="tel:+12055551234" class="header-phone-number">(205) 555-1234</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+
+        <!-- Hero CTA Section -->
+        <section class="cta-section">
+            <h2>Emergency HVAC Service in Birmingham</h2>
+            <p>AC Broken? Heater Not Working? Get Help Now!</p>
+            <a href="tel:+12055551234" class="cta-button cta-button-large click-to-call">
+                📞 Call Now for Emergency Service
+            </a>
+        </section>
+
+        <!-- Urgency Banner -->
+        <div class="urgency-banner">
+            ⚡ Average Response Time: Under 60 Minutes in Birmingham Area
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Availability</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">&lt;60min</div>
+                <div class="stat-label">Response Time</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+
+        <!-- Emergency Contact Form -->
+        <section class="form-container" id="contact-form">
+            <div class="form-header">
+                <p class="emergency-text">🚨 Get Immediate Assistance</p>
+                <h2>Request Emergency HVAC Service</h2>
+            </div>
+            <form action="/submit-form" method="POST" id="hvac-emergency-form">
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(205) 555-1234" pattern="[0-9\s\-\(\)]+">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="zipcode">ZIP Code <span class="required">*</span></label>
+                    <input type="text" id="zipcode" name="zipcode" required placeholder="35203" pattern="[0-9]{5}" maxlength="5">
+                    <p class="zip-verify-text">We verify service area based on Birmingham ZIP codes</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="service-type">Service Type Needed <span class="required">*</span></label>
+                    <select id="service-type" name="service_type" required>
+                        <option value="">Select a service...</option>
+                        <option value="ac-repair">AC Repair</option>
+                        <option value="heater-repair">Heater Repair</option>
+                        <option value="ac-not-cooling">AC Not Cooling</option>
+                        <option value="no-heat">No Heat</option>
+                        <option value="strange-noises">Strange Noises</option>
+                        <option value="thermostat-issue">Thermostat Issues</option>
+                        <option value="installation">New Installation</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="other">Other Emergency</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="emergency" name="emergency" value="yes">
+                    <label for="emergency">🚨 THIS IS AN EMERGENCY - Need immediate assistance</label>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="cta-button cta-button-large">
+                        Get Fast Help Now
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Secondary CTA -->
+        <section class="cta-section">
+            <h2>Prefer to Speak with Someone?</h2>
+            <p>Our emergency dispatch team is standing by 24/7</p>
+            <a href="tel:+12055551234" class="cta-button cta-button-secondary click-to-call">
+                24/7 Emergency HVAC Repair - Call Now
+            </a>
+        </section>
+
+        <!-- Trust Badges Section -->
+        <section class="trust-badges">
+            <h2>Why Birmingham Trusts Us</h2>
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <div class="badge-icon">✅</div>
+                    <h3>Licensed & Insured</h3>
+                    <p>Fully licensed HVAC contractors with comprehensive insurance coverage for your protection</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">🕐</div>
+                    <h3>24/7 Availability</h3>
+                    <p>Emergency service available around the clock, including weekends and holidays</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">⚡</div>
+                    <h3>Fast Response</h3>
+                    <p>Average response time under 60 minutes for emergency calls in the Birmingham area</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">📍</div>
+                    <h3>Local Birmingham Experts</h3>
+                    <p>Family-owned business serving Birmingham and surrounding communities for 15+ years</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">💰</div>
+                    <h3>Money-Back Guarantee</h3>
+                    <p>100% satisfaction guarantee on all repairs and installations. Your comfort is our priority</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">⭐</div>
+                    <h3>5-Star Rated</h3>
+                    <p>Rated 4.9/5 stars with over 500 verified customer reviews across all platforms</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof / Testimonials Section -->
+        <section class="social-proof">
+            <h2>What Our Birmingham Customers Say</h2>
+            <p class="subtitle">Real reviews from real customers in your area</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Our AC went out at 2 AM during a heatwave. Called these guys and they were here within 45 minutes! Fixed it quickly and the price was very reasonable. Highly recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JS</div>
+                        <div class="author-info">
+                            <h4>Jennifer Smith</h4>
+                            <p>Homewood, AL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Best HVAC company in Birmingham! They diagnosed the problem with my heater in minutes and had it running before I knew it. Professional, courteous, and honest."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <h4>Michael Johnson</h4>
+                            <p>Mountain Brook, AL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "I've used them for years for both emergencies and regular maintenance. Always professional, always fair pricing. They're the only HVAC company I trust with my home."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SD</div>
+                        <div class="author-info">
+                            <h4>Sarah Davis</h4>
+                            <p>Vestavia Hills, AL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Fast, reliable, and affordable! They came out on a Sunday for an emergency and didn't charge me an arm and a leg. Will definitely call them again for any HVAC needs."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RW</div>
+                        <div class="author-info">
+                            <h4>Robert Williams</h4>
+                            <p>Hoover, AL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "The technician was knowledgeable and explained everything clearly. He fixed our AC and even gave us tips on maintaining it. Great service at a great price!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LM</div>
+                        <div class="author-info">
+                            <h4>Lisa Martinez</h4>
+                            <p>Trussville, AL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Called them for an emergency heater repair in the middle of winter. They responded immediately and had us warm again within an hour. Cannot thank them enough!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DT</div>
+                        <div class="author-info">
+                            <h4>David Thompson</h4>
+                            <p>Birmingham, AL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="cta-section">
+            <h2>Don't Wait - Get Help Now!</h2>
+            <p>Emergency HVAC service available 24/7 across Birmingham</p>
+            <a href="tel:+12055551234" class="cta-button cta-button-large click-to-call">
+                📞 Call Now: (205) 555-1234
+            </a>
+            <p style="margin-top: 20px; color: #6b7280;">
+                Or <a href="#contact-form" style="color: #2563eb; font-weight: 600;">fill out the form above</a> for a fast callback
+            </p>
+        </section>
+
+    </div>
+
+    <script>
+        // Form validation and ZIP code verification
+        document.getElementById('hvac-emergency-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const zipCode = document.getElementById('zipcode').value;
+            const validBirminghamZips = [
+                '35004', '35005', '35006', '35007', '35020', '35022', '35023', '35040',
+                '35043', '35061', '35063', '35068', '35073', '35078', '35094', '35118',
+                '35124', '35126', '35127', '35173', '35203', '35204', '35205', '35206',
+                '35207', '35208', '35209', '35210', '35211', '35212', '35213', '35214',
+                '35215', '35216', '35217', '35218', '35221', '35222', '35223', '35224',
+                '35226', '35228', '35229', '35233', '35234', '35235', '35242', '35243',
+                '35244', '35254', '35490'
+            ];
+
+            if (!validBirminghamZips.includes(zipCode)) {
+                alert('We currently serve the Birmingham, AL metro area. Please verify your ZIP code or call us at (205) 555-1234 to confirm service availability.');
+                return false;
+            }
+
+            // If validation passes, submit the form
+            alert('Thank you! We will contact you within 15 minutes.');
+            this.submit();
+        });
+
+        // Smooth scroll to form
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Track CTA clicks (integrate with your analytics)
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Add your analytics tracking code here
+                console.log('CTA clicked:', this.textContent.trim());
+            });
+        });
+    </script>
+
+</body>
+</html>
